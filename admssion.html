@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IIUI School Admission Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 40px;
+    }
+    .form-container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    h2 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Admission Form</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label>Student Name</label>
+      <input type="text" name="student_name" required>
+
+      <label>Father Name</label>
+      <input type="text" name="father_name" required>
+
+      <label>Class</label>
+      <select name="class" required>
+        <option value="">Select Class</option>
+        <option>Play Group</option>
+        <option>Nursery</option>
+        <option>KG</option>
+        <option>1 to 10</option>
+      </select>
+
+      <label>Date of Birth</label>
+      <input type="date" name="dob" required>
+
+      <label>Contact Number</label>
+      <input type="tel" name="contact" required>
+
+      <label>Address</label>
+      <textarea name="address" rows="3" required></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+</body>
+</html>
